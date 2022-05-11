@@ -16,7 +16,7 @@ def load_dictionary():
     #JClass函數是連通Java和Python的橋樑，他根據Java路徑名稱得到一個Python類別
     #利用JClass取得HanLP的IOUtil工具類別
     
-    path = HanLP.Config.CoreDictionaryPath.replace('.txt', '.mini.txt') 
+    path = HanLP.Config.CoreDictionaryPath.replace('.txt', '.mini.txt') #直接使用即可  不須再調路徑
     #取得HanLP的組態項目Config的詞典路徑。寫到設定檔的條目，最終會讀入這個結構
     #例如設定檔為CoreDictionaryPath=data/dictionary/CoreNatureDictionary.txt，該組態將讀入HanLP.Config.CoreDictionaryPath。要載入mini詞典就改路徑
     
